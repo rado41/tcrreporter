@@ -1,0 +1,36 @@
+Input:
+    Path/CP          :
+    Technology [any] :
+    Bands      [any] :
+    Regex      [all] :
+    Data Miner Path  : If Path is not CP, specify the Dataminer results path
+Output:
+    New Excel File:
+    Updated Functional/Spec/Int/Harsh Limits Pass/Fail Criteria
+    New Sheets with 
+        Pass Fail Percentage
+        Failures and their description
+
+Create Namespace encompassing all Technologies
+
+Class for Each Technology
+    Mapping to test case for each Technology
+    Methods:
+        Query
+            Pass/Fail for specified tests
+                NA  : Not Run
+                FAIL: Failures
+                PASS: PASS
+                MF  : Measurement Failure
+                CF  : Call Failure/Call Drop
+        Update
+            Write to Specified Excel sheet 
+        Parse  
+            Specifiy a Test tree to parse the tests
+            if already parsed, return EEXISTS
+            if not parsed, datamine to dataminer Path
+        Report
+        
+
+
+
